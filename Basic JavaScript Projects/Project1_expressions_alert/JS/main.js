@@ -8,3 +8,4 @@ var Sent2 = " and this is the end of the string";
 
 //An expression
 var fullSentence = Sent1+Sent2;
+window.alert(fullSentence);
