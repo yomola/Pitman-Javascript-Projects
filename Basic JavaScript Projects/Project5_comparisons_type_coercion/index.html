@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type coercion</title>
+    <script src="JS/main.js"></script>
+</head>
+<body>
+    <p id="coercion" onclick="coercion()">click me!</p>
+    <p id="bigNegative" onclick="bigNegative()">Big Negative Number</p>
+    <p id="bigPositive" onclick="bigPositive()">Big Positive Number</p>
+    <p id="yes" onclick="yes()">Am I a Number?</p>
+    <p id="no" onclick="no()">Am I a Number?</p>
+    <div onclick="isBigger()">some text</div>
+    <p class="log" onclick="consoleLogging()">t</p>
+    <div onclick="isSmaller()">some more text</div>
+    <div onclick="isEquals()">some more text</div>
+    <div onclick="isNotEquals()">some more text</div>
+    <p id="sdt-sv" onclick="strictEquality1()">Return true by ensuring to match the data type and value.</p>
+    <p id="ddt-dv" onclick="strictEquality2()">Return false by writing a different data type and different value.</p>
+    <p id="ddt-sv" onclick="strictEquality3()">Return false by writing a different data type but the same value for both.</p>
+    <p id="sdt-dv" onclick="strictEquality4()">Return false by writing the same data type but a different value for both.</p>
+    <p id="andOperator1"onclick="andOperator1()">And Operator False</p>
+    <p id="andOperator2"onclick="andOperator2()">And Operator True</p>
+    <p id="orOperator1"onclick="orOperator1()">Or Operator False</p>
+    <p id="orOperator2"onclick="orOperator2()">False Operator True</p>
+    <p id="not1"onclick="notOperator1()">Not Operator false</p>
+    <p id="not2"onclick="notOperator2()">Not Operator true</p>
+</body>
+</html>
