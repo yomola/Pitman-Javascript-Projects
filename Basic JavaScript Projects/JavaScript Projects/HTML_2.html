@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Challenge</title>
+    <link rel="stylesheet" href="CSS/CSS_1.css">
+    <script src="JavaScript/JavaScript_2.js"></script>
+</head>
+<body>
+        <form action="" name="contact" onsubmit="return validateForm()">
+            <h1>Contact Form</h1>
+            <p>Please fill the form and we will get in touch with you</p>
+            <fieldset>
+                <legend>Personal information:</legend>
+                <label for="firstname">First name <input type="text" id="firstname" required></label>
+                <label for="lastname">Last name <input type="text" id="lastname" required></label>
+                <label for="age">Age <input type="number" id="age"></label>
+                <label for="email">Email address <input type="email" id="email"></label>
+                <label for="tel">Mobile number <input type="tel" id="tel"></label>
+                <label for="address">Home address<textarea rows="5" id="address" name="address"></textarea></label>
+            </fieldset>
+            <fieldset>
+                <legend>How do you want to be contacted?</legend>
+                <label for="viaMobile" class="checkbox"><input type="checkbox" id="viaMobile" name="viaMobile">Calls</label>
+                <label for="viaEmail" class="checkbox"><input type="checkbox" id="viaEmail" name="viaEmail"> Emails</label>
+                <label for="atHome" class="checkbox"><input type="checkbox" id="atHome" name="atHome">At Home</label>
+            </fieldset>
+            <label for="submit"><input type="submit" id="submit" value="Send"></label>
+            
+        </form>
+</body>
+</html>

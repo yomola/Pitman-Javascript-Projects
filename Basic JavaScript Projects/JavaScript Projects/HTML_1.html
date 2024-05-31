@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browser</title>
+ <script src ="JavaScript/JavaScript_1.js" defer></script>
+</head>
+
+<body>
+  <h1>What is your favorite color?</h1>
+  <h3>Pick your favourte color from this list:</h3>
+  <ul>
+    <li>Red</li>
+    <li>Yellow</li>
+    <li>Green</li>
+    <li>Blue</li>
+    <li>Pink</li>
+    <li>Purple</li>
+  </ul>
+  <label for="Color_Input"><h3>Enter your choice below:</h3></label>
+  <input id ="Color_Input" type="text">
+    <button onclick="Color_Function()">Submit Color</button>
+    <p id ="Output"></p>
+
+    <h1 class="Click">This text will change.</h1>
+    <h3 class="Click">This text will remain unchanged.</h3>
+    <button onclick="helloWorld()">Click me.</button><br><br>
+
+    <!--The canvas element to contain a line-->
+    <canvas style="width: 500px; height: 500px; border: 2px solid green;" id="myFirstCanvas"></canvas>
+    <br>
+    <button onclick="drawLine()">Draw Line.</button>
+    <br><br><br>
+    <!--The canvas element to contain a gradient-->
+    <canvas style="width: 500px; height: 500px; border: 2px solid darkblue;" id="mySecondCanvas"></canvas>
+    <br>
+    <button onclick="drawColorGradient()">Show Gradient.</button>
+</body>
+
+</html>

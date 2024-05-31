@@ -1,0 +1,40 @@
+label, input{
+    display: block;
+}
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+form{
+    margin: 0 auto;
+    width: 50%;
+    padding: 5px;
+}
+h1,p{
+    text-align: center;
+}
+input[type="checkbox"], .checkbox{
+    display: inline;
+    margin-bottom: 0;
+}
+
+input[type ="checkbox"]{
+    width: 26px;
+    margin-right: 0px;
+}
+fieldset{
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 10px;
+    border-bottom: 0;
+}
+
+legend{
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+textarea{
+    width: 100%;
+}
