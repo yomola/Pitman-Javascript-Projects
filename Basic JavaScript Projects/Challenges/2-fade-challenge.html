@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body{
+            font-size: 4vw;
+            opacity: 1;
+            transition: 1s opacity;
+        }
+
+        body.fade-out{
+            opacity: 0;
+           
+        }
+        html{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //add the fadeout class to the body as soon as the page loads
+        document.body.classList.add('fade-out');
+
+        //remove the fade-out class from the body once the page is loaded
+        window.addEventListener('DOMContentLoaded',() =>{
+            document.body.classList.remove('fade-out');
+        });
+    </script>
+    <div>
+        <h2>Responsive Text</h2>
+        <p>This text is to fade right in</p>
+    </div>
+</body>
+</html>

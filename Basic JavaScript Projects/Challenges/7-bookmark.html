@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: seagreen;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        font-size: 15px;
+    }
+    nav{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        display: inline;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    nav li{
+        color: #b3b3b3;
+        display: inline-block;
+        margin-right: -2px;
+        position: relative;
+        padding: 12px 40px;
+        border: 1px solid #9d9fa2;
+        border-radius: 1.5px;
+        background-color: #cad0ce;
+        cursor: pointer;
+    }
+    nav li:hover{
+        background-color: #5db596;
+        color: #fff;
+    }
+    #logo{
+        width: 10%;
+        height: 10%;
+        border-radius: 100%;
+    }
+    #gallery{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .flex-item{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        padding: 4px;
+        border-radius: 10px;
+
+    }
+    #what-we-are-about{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    form{
+        
+        width: 60vw;
+        max-width: 700px;
+        margin: 0 auto;
+        padding-bottom: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    input, select{
+        width: 500px;
+        margin: 2px auto ;
+        display: block;
+        border: 2px;
+        border-radius: 4px;
+        
+    }
+    input[type="checkbox"]{
+        display: inline;
+        width: 50px;
+    }
+    h1, h2, p{
+        margin: 1em auto;
+        text-align: center;
+    }
+
+
+
+    .gallery, .contact, footer{
+        background-color: #cad0ce;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <header> <!-- header containing website logo and navigation for the page -->
+		
+		<nav id="top">
+			<img src="https://static.vecteezy.com/system/resources/thumbnails/009/551/676/small/shy-dog-logo-illustration-depicting-shy-dog-suitable-for-pet-company-free-vector.jpg" alt= "website logo" id="logo">
+			<ul>
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#gallery">GALLERY</a></li>
+				<li><a href="#what-we-are-about">ABOUT US</a></li>
+				<li><a href="#contact">RESERVATIONS</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<header>
+			<h1>Meet our dogs</h1>
+			<p>If you are interested in rehoming any of the dogs on this page, please fill out the form by clicking on <a href="#contact">reservations.</a></p>
+		</header>
+	</main>	
+	<!-- gallery containing images of 9 pups -->
+	<section id="gallery">
+		<img src="https://images.squarespace-cdn.com/content/v1/5ae4cc1555b02c357fc9a998/1678481407720-AUGWRZ23X594NIZATDMD/20230213_144932.jpg" alt="1" class="flex-item">
+		<img src="https://www.pottspointvet.com.au/hubfs/6-weeks-puppy-vaccination-schedule.jpg" alt="2" class="flex-item">
+		<img src="https://static.vecteezy.com/system/resources/thumbnails/030/429/655/small_2x/funny-and-happy-puppy-dog-isolated-on-white-background-cute-pet-ai-generative-photo.jpg" alt="3" class="flex-item">
+		<img src="https://hayleyfraserphotography.co.uk/wp-content/uploads/2020/02/Ruby-4.jpg" alt="4" class="flex-item">
+		<img src="https://images.squarespace-cdn.com/content/v1/53b1eedce4b0ea2f4d03027b/1446149707050-F88NRHCDOJU2PCJTS5MO/buddy.jpg" alt="5" class="flex-item">
+		<img src="https://images.squarespace-cdn.com/content/v1/5ae4cc1555b02c357fc9a998/1678481494936-HEWIEEKA4R2DE7D3RQW7/Finchley.jpg" alt="6" class="flex-item">
+		<img src="https://i.pinimg.com/736x/61/45/c3/6145c388785ec53a8a9ecc33cc044a50.jpg" alt="7" class="flex-item">
+		<img src="https://www.brookvets.co.uk/wp-content/uploads/2018/11/puppy.jpg" alt="8" class="flex-item">
+		<img src="https://pyxis.nymag.com/v1/imgs/1fa/1b2/4ae76fa8c9910485045e4f9a956345903b-18-puppy-dog-eyes.rsquare.w400.jpg" alt="9" class="flex-item">
+	</section>
+	<!-- End of gallery-->
+	<section id="what-we-are-about">
+		<h2>About us</h2>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/B7yOO4oKMVc?si=V6k6z0JzUnx3Lkjf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</section>
+	<header>
+		<h2>Application form</h2>
+	</header>
+	<form id="contact">
+		<label for="dog-number">Choose the number that corresponds to the pup you want:
+			<select id="dog-number" name="dog-number" required>
+				<option value="1" disabled>pup number</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+			</select>
+		</label><br>
+		<label for="title">Title:
+			<select id="title" name="title">
+				<option value="Mr.">Mr.</option>
+				<option value="Mrs.">Mrs.</option>
+				<option value="Miss.">Miss.</option>
+				<option value="Dr.">Dr.</option>
+				<option value="Other">Other</option>
+			</select>
+		</label><br>
+		<label for="first-name">First name:<input type="text" id="first-name"></label><br>
+		<label for="last-name">Last name:<input type="text" id="last-name"></label><br>
+		<label for="address">Address:<input type="text" id="address"></label><br>
+		<label for="town-city">Town/City:<input type="text" id="town-city"></label><br>
+		<label for="postcode">Postcode:<input type="text" id="postcode"></label><br>
+		<label for="phone">Phone number:<input type="tel" id="phone"></label><br>
+		<label for="email">Email:<input type="email"></label><br>
+		<label for="dob">Date of Birth:<input type="date" id="dob"></label><br>
+		<label for= "confirmation"><input type="checkbox" required id="confirmation">I confirm that I am over 18 years of age, all of the information I have provided is correct to the best of my knowledge and the shelter can contact me about my application using the details on this form</label><br>
+		<input type="submit" name="submit"><br>
+	</form>
+	<footer>
+		<div><p>© 2024 Newcastle Dog & Cat Shelter. Registered charity number 220506</p>
+		</div>
+		<div><p>Web design by Adeyomola a student of <a href="https://www.pitman-training.com/our-courses/software-web-development/">Pitman Institute</a></p></div>
+		<div><p><a href="#top">Back to the top</a></p></div>
+	</footer>
+</body>
+</html>

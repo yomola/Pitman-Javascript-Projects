@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        input, label
+        {
+            display: block;
+            width: 100%;
+        }
+        input{
+            margin-bottom: 5px;;
+        }
+        input[type ="submit"]{
+            margin-top: 25px;
+            width: 101%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2px;
+        }
+    </style>
+    <script>
+        function validateForm(){
+            let x = document.forms['basic-form']['firstname'].value;
+            let y = document.forms['basic-form']['lastname'].value;
+            let z = document.forms['basic-form']['tel'].value;
+            if (x == ""){
+                alert("Firstname must be filled out");
+                return false;
+            }
+            else if (y == "") {
+                alert("Lastname must be filled out");
+                return false;
+            } else if (z =="") {
+                alert("Mobile number must be filled out");
+                return false
+            }
+            else{
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <form action="" name="basic-form" onsubmit="return validateForm()" method="post">
+            <label for="firstname">Firstname <input type="text" id="firstname" name="firstname"></label>
+            <label for="lastname">Lastname <input type="text" id="lastname" name="lastname"></label>
+            <label for="tel">Phone number <input type="tel" id="tel" name="tel"></label>
+            <input type="submit" value="Send">  
+        </form>
+    </div>
+</body>
+</html>

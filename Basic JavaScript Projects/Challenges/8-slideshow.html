@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        #slideshow{
+            margin: 50px auto;
+            position: relative;
+            width: 100x;
+            height: 400px;
+            padding: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+        #slideshow > div {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+        }
+    </style>
+    <script>
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function(){
+            $("#slideshow > div:first").fadeOut(1000).next().fadeIn(1000).end().appendTo("#slideshow");
+        }, 3000);
+    </script>
+</head>
+<body>
+    <div id="slideshow">
+        <div>
+            <img src="https://www.pottspointvet.com.au/hubfs/6-weeks-puppy-vaccination-schedule.jpg" alt="^ weeks puppy">
+        </div>
+        <div>
+            <img src="https://www.brookvets.co.uk/wp-content/uploads/2018/11/puppy.jpg" alt="Another pup" >
+        </div>
+        <div>
+            Pretty cool eh? This slide is proof that the content can be any info
+        </div>
+    </div>
+</body>
+</html>
