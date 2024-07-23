@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myDog"></p>
+    <script>
+        /* set the data as a key/value pair to be saved locally oin your browser*/
+        localStorage.setItem("Name", "Dax");
+        /* then use the key "Name" to return its value "Dax"*/
+        document.getElementById("myDog").innerHTML= localStorage.getItem("Name");
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myDog"></p>
+    <script>
+        /* A JSON string variable */
+        var dog = '{"name":"Dax", "breed":"Dalmatian", "color":"White and Black"}';
+
+        /* Convert JSON string to JavaScript Objects */
+        var JSONstring = JSON.parse(dog);
+        document.getElementById('myDog').innerHTML = JSONstring.name+ " the "+JSONstring.color+ " "+JSONstring.breed;
+    </script>
+</body>
+</html>
